@@ -1,5 +1,21 @@
 # Настройка нового сервера
 
+## Aliases
+```sh
+alias l="ls -la --group-directories-first"
+alias sai="sudo apt install"
+alias sar="sudo apt remove"
+alias suu="sudo apt update"
+alias suuu="sudo apt update && sudo apt upgrade"
+alias pv="python -m venv venv"
+alias sv="source /venv/bin/activate"
+alias d="docker"
+alias dc="docker-compose"
+alias rs="python manage.py runserver"
+alias mm="python manage.py makemigrations"
+alias mg="python manage.py migrate"
+```
+
 ## Настройка micro
 
 - Установить micro и зависимости:
