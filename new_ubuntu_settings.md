@@ -16,6 +16,29 @@ alias mm="python manage.py makemigrations"
 alias mg="python manage.py migrate"
 ```
 
+## Использовать Nemo по умолчанию
+```sh
+sudo apt install nemo
+
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+
+gsettings set org.gnome.desktop.background show-desktop-icons false
+
+gsettings set org.nemo.desktop show-desktop-icons true
+```
+
+Поменять терминал для Nemo:
+```sh
+gsettings set org.cinnamon.desktop.default-applications.terminal exec 'TERMINAL'
+```
+
+Откатить если все сломалось:
+```sh
+xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
+
+gsettings set org.gnome.desktop.background show-desktop-icons true
+```
+
 ## Настройка micro
 
 - Установить micro и зависимости:
@@ -85,6 +108,26 @@ source ~/.zshrc
 
 ```sh
 sudo add-apt-repository ppa:deadsnakes/ppa
+
 sudo apt install python3.9
+
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
+apt-get install python3.9-dev python3.9-venv
+```
+
+## Установить apt-fast
+
+```sh
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get install apt-fast
+```
+
+## Установить Postgres
+
+```sh
+sudo apt install postgresql postgresql-contrib
+
+sudo -i -u postgres
 ```
