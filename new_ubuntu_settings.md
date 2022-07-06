@@ -63,3 +63,12 @@ sudo rm -r /home/USER/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 source ~/.zshrc
 ```
+
+
+## Установить Python 3.9.*
+
+```sh
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.9
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+```
