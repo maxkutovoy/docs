@@ -131,3 +131,33 @@ sudo apt install postgresql postgresql-contrib
 
 sudo -i -u postgres
 ```
+
+## Установить Docker и docker-compose
+```sh
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+apt-cache policy docker-ce
+```
+
+Настройка docker без sudo
+```sh
+sudo usermod -aG docker ${USER}
+
+su - ${USER}
+
+sudo usermod -aG docker username
+```
+
+Docker-compose:
+! Поменять версию на [актуальную](https://github.com/docker/compose/releases)
+```sh
+sudo curl -L "https://github.com/docker/compose/releases/download/2.6.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+```
