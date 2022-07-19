@@ -113,7 +113,7 @@ sudo apt install python3.9
 
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 
-apt-get install python3.9-dev python3.9-venv
+sudo apt-get install python3.9-dev python3.9-venv
 ```
 
 ## Установить apt-fast
@@ -141,6 +141,8 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
 apt-cache policy docker-ce
+
+sudo apt install docker-ce
 ```
 
 Настройка docker без sudo
