@@ -9,11 +9,14 @@ alias suu="sudo apt update"
 alias suuu="sudo apt update && sudo apt upgrade"
 alias pv="python -m venv venv"
 alias sv="source /venv/bin/activate"
-alias d="docker"
-alias dc="docker-compose"
 alias rs="python manage.py runserver"
 alias mm="python manage.py makemigrations"
 alias mg="python manage.py migrate"
+alias d="docker"
+alias dc="docker-compose"
+alias dcub="docker-compose up --build"
+alias dcdv="docker-compose down -v"
+alias dcr="docker-compose run"
 ```
 
 ## Использовать Nemo по умолчанию
@@ -147,6 +150,7 @@ sudo apt install docker-ce
 
 Настройка docker без sudo
 ```sh
+sudo gpasswd -a $USER docker
 sudo usermod -aG docker ${USER}
 
 su - ${USER}
