@@ -19,6 +19,15 @@ alias dcdv="docker-compose down -v"
 alias dcr="docker-compose run"
 ```
 
+
+## Установить apt-fast
+
+```sh
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get install apt-fast
+```
+
 ## Использовать Nemo по умолчанию
 ```sh
 sudo apt install nemo
@@ -119,13 +128,6 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 sudo apt-get install python3.9-dev python3.9-venv
 ```
 
-## Установить apt-fast
-
-```sh
-sudo add-apt-repository ppa:apt-fast/stable
-sudo apt-get update
-sudo apt-get install apt-fast
-```
 
 ## Установить Postgres
 
@@ -166,4 +168,55 @@ sudo curl -L "https://github.com/docker/compose/releases/download/2.6.1/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
+```
+## Установить kubernetes
+
+Загрузите последнюю версию с помощью команды:
+```sh
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+```
+
+Сделайте двоичный файл kubectl исполняемым:
+```sh
+sudo chmod +x ./kubectl
+```
+
+Переместите двоичный файл в директорию из переменной окружения PATH:
+```sh
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+Убедитесь, что установлена последняя версия:
+```sh
+kubectl version --client
+```
+
+Установите VirtualBox
+```sh
+sudo apt install virtualbox
+```
+
+Скачать и установить minikube со страницы релизов
+```sh
+https://github.com/kubernetes/minikube/releases
+```
+
+Установить kubextl
+```sh
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+chmod +x ./kubectl
+
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+kubectl version --client #проверить версию
+```
+
+## Установить nala (вместо apt)
+```sh
+echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+
+sudo apt update && sudo apt install nala
 ```
