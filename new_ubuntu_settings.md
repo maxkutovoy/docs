@@ -5,8 +5,8 @@
 alias l="ls -la --group-directories-first"
 alias sai="sudo apt install"
 alias sar="sudo apt remove"
-alias suu="sudo apt update"
-alias suuu="sudo apt update && sudo apt upgrade"
+alias sau="sudo apt update"
+alias sauu="sudo apt update && sudo apt upgrade"
 alias pv="python -m venv venv"
 alias sv="source /venv/bin/activate"
 alias rs="python manage.py runserver"
@@ -87,7 +87,7 @@ sudo apt install zsh
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-- Установить автодополнения
+- Установить ав2тодополнения
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 ```
@@ -201,15 +201,28 @@ sudo apt install virtualbox
 https://github.com/kubernetes/minikube/releases
 ```
 
-Установить kubextl
+## Kubernetes справка
+Загрузить локальный docker image в kuber
 ```sh
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+minikube image load image_name
+или сразу
+minikube image build -t image_name
+```
 
-chmod +x ./kubectl
+Запустить Docker container в kuber
+```sh
+k run django --image=<image_name> --env='SECRET_KEY=sdvaihgg' --image-pull-policy='IfNotPresent' --port=8082
+```
+Если не работает:
+```sh
+eval $(minikube docker-env)
+```
 
-sudo mv ./kubectl /usr/local/bin/kubectl
 
-kubectl version --client #проверить версию
+
+Зайти в pod
+```sh
+kubectl exec <pod_name> -it -- bash
 ```
 
 ## Установить nala (вместо apt)
