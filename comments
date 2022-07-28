@@ -12,3 +12,4 @@
 Перенесите load_dotenv() внутрь ifmain / def main
 Используйте contextlib.suppress
 Вместо кодов статуса используйте response.ok
+Уменьшите кол-во необходимых библиотек
