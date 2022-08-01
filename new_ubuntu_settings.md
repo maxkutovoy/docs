@@ -3,12 +3,12 @@
 ## Aliases
 ```sh
 alias l="ls -la --group-directories-first"
-alias sai="sudo apt install"
-alias sar="sudo apt remove"
-alias sau="sudo apt update"
-alias sauu="sudo apt update && sudo apt upgrade"
+alias sai="sudo nala install"
+alias sar="sudo nala remove"
+alias sau="sudo nala update"
+alias sauu="sudo nala update && sudo nala upgrade"
 alias pv="python -m venv venv"
-alias sv="source /venv/bin/activate"
+alias sv="source venv/bin/activate"
 alias rs="python manage.py runserver"
 alias mm="python manage.py makemigrations"
 alias mg="python manage.py migrate"
@@ -17,6 +17,8 @@ alias dc="docker-compose"
 alias dcub="docker-compose up --build"
 alias dcdv="docker-compose down -v"
 alias dcr="docker-compose run"
+alias k="kubectl"
+alias kr="kubectl run"
 ```
 
 
@@ -26,6 +28,15 @@ alias dcr="docker-compose run"
 sudo add-apt-repository ppa:apt-fast/stable
 sudo apt-get update
 sudo apt-get install apt-fast
+```
+
+## Установить nala (вместо apt)
+```sh
+echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
+
+sudo apt update && sudo apt install nala
 ```
 
 ## Использовать Nemo по умолчанию
@@ -115,6 +126,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 source ~/.zshrc
 ```
 
+## Установить Stacer
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer
+
+sudo apt install stacer
+```
 
 ## Установить Python 3.9.*
 
@@ -201,7 +218,7 @@ kubectl version --client
 
 Установите VirtualBox
 ```sh
-sudo apt install virtualbox
+sudo nala install virtualbox
 ```
 
 Скачать и установить minikube со страницы релизов
@@ -230,12 +247,7 @@ eval $(minikube docker-env)
 ```sh
 kubectl exec <pod_name> -it -- bash
 ```
-
-## Установить nala (вместо apt)
+Зайти в docker контейнер
 ```sh
-echo "deb http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
-
-wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
-
-sudo apt update && sudo apt install nala
+docker exec -it {container_name} /bin/bash
 ```
