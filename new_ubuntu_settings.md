@@ -39,7 +39,7 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 sudo apt update && sudo apt install nala
 ```
 
-## Использовать Nemo по умолчанию
+## Использовать Ne  mo по умолчанию
 ```sh
 sudo apt install nemo
 

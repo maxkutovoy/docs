@@ -80,5 +80,28 @@
     },
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "workbench.colorTheme": "Atom One Dark",
+    "cSpell.words": [
+        "dcdv",
+        "dcub",
+        "deadsnakes",
+        "gpasswd",
+        "gsettings",
+        "inet",
+        "kuber",
+        "nemo",
+        "oguzhaninan",
+        "pgadmin",
+        "sauu",
+        "sdvaihgg",
+        "stacer",
+        "Stacer",
+        "useprimary",
+        "usermod",
+        "volian",
+        "xauth",
+        "xclip",
+        "тодополнения",
+        "Установть"
+    ],
 
 }
