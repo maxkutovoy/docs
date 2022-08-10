@@ -39,7 +39,7 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 sudo apt update && sudo apt install nala
 ```
 
-## Использовать Ne  mo по умолчанию
+## Использовать Nemo по умолчанию
 ```sh
 sudo apt install nemo
 
@@ -251,3 +251,9 @@ kubectl exec <pod_name> -it -- bash
 ```sh
 docker exec -it {container_name} /bin/bash
 ```
+
+Запустить сайт из minikube
+```sh
+minikube service <service-name>
+```
+kubectl rollout restart deployment wiki-deployment
