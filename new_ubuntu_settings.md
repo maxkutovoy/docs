@@ -257,3 +257,9 @@ docker exec -it {container_name} /bin/bash
 minikube service <service-name>
 ```
 kubectl rollout restart deployment wiki-deployment
+
+
+## Установить SSH server
+```sh
+sudo apt install openssh-server
+```
