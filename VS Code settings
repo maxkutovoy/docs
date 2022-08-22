@@ -21,10 +21,10 @@
     "open-in-browser.default": "firefox",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "cSpell.language": "en,ru",
+    "cSpell.language": "ru,ru-RU,en",
     "projectManager.projectsLocation": "/home/max/projects/",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Adapta Nokto",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "terminal.external.linuxExec": "gnome-terminal",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
@@ -57,19 +57,25 @@
 
     },
     "git.confirmSync": false,
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
+    "workbench.iconTheme": "jetbrainsicons",
     "cSpell.userWords": [
         "dajngo",
         "Devman",
         "dotenv",
         "dvmn",
         "gsettings",
+        "kubectl",
         "Kubernetes",
         "Kutovoy",
+        "minikube",
         "nemo",
         "Nemo",
+        "Rollbar",
+        "runserver",
         "stacer",
         "usermod",
+        "venv",
+        "worktree",
         "xauth",
         "xclip",
         "Девман",
@@ -81,19 +87,30 @@
         "Учетка",
         "учетки",
         "учетку",
-        "учеток"
+        "учеток",
+        "фичи",
+        "фронтенд",
+        "фронтенда"
     ],
     "redhat.telemetry.enabled": false,
-    "files.autoSave": "onFocusChange",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.guides.bracketPairs": "active",
     "vs-kubernetes": {
         "disable-linters": [
             "resource-limits"
         ],
-        "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
+        "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
     },
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.guides.bracketPairsHorizontal": false,
-    "editor.hover.enabled": false,
+    // "editor.hover.enabled": false,
+    "cSpell.ignoreWords": [],
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "cSpell.enableFiletypes": [
+        "!asciidoc"
+    ],
+    "polacode.target": "snippet",
+    "yaml.validate": false,
+    "workbench.productIconTheme": "bootstrap-product-icons",
 }
