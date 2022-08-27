@@ -137,6 +137,7 @@ sudo apt install stacer
 ## Установить Python 3.9.*
 
 ```sh
+sudo apt install software-properties-common #Потребовалось в linux Mint
 sudo add-apt-repository ppa:deadsnakes/ppa
 
 sudo apt install python3.9
