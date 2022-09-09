@@ -40,6 +40,13 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 sudo apt update && sudo apt install nala
 ```
 
+## Установить Alacritty
+```sh
+sudo add-apt-repository ppa:aslatter/ppa
+sudo apt update
+sudo apt install alacritty
+```
+
 ## Использовать Nemo по умолчанию
 ```sh
 sudo apt install nemo
