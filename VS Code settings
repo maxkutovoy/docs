@@ -4,28 +4,23 @@
     "tabnine.experimentalAutoImports": true,
     "git.enableSmartCommit": true,
     "editor.lineHeight": 1.5,
-    "editor.fontSize": 15,
-    "window.zoomLevel": 0.5,
-    "[nginx]": {
-        "editor.defaultFormatter": "raynigon.nginx-formatter"
-    },
+    "editor.fontSize": 14,
+    "window.zoomLevel": 0.8,
     "editor.rulers": [
         79
     ],
-    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontFamily": "'Hack Nerd Font Mono'",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
     "security.workspace.trust.untrustedFiles": "open",
     "python.languageServer": "Pylance",
-    "workbench.editorAssociations": {
-        "*.docx": "onlyoffice-desktopeditors"
-    },
     "open-in-browser.default": "firefox",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "cSpell.language": "ru,ru-RU,en",
     "projectManager.projectsLocation": "/home/max/projects/",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Ayu Mirage Bordered",
-    "terminal.external.linuxExec": "gnome-terminal",
+    "workbench.colorTheme": "Mariana Pro (Gray)",
+    "terminal.external.linuxExec": "alacritty",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.enablePersistentSessions": false,
@@ -33,7 +28,7 @@
     "terminal.integrated.fastScrollSensitivity": 3,
     "terminal.integrated.lineHeight": 1.1,
     "workbench.editor.enablePreview": true,
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "window.openFoldersInNewWindow": "off",
     "editor.wordWrap": "on",
 
@@ -58,6 +53,27 @@
     },
     "git.confirmSync": false,
     "workbench.iconTheme": "jetbrainsicons",
+    "redhat.telemetry.enabled": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.guides.bracketPairs": "active",
+    "vs-kubernetes": {
+        "disable-linters": [
+            "resource-limits"
+        ],
+        "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    // "editor.hover.enabled": false,
+    "cSpell.ignoreWords": [],
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "cSpell.enableFiletypes": [
+        "!asciidoc"
+    ],
+    "polacode.target": "snippet",
+    "yaml.validate": false,
+    "workbench.productIconTheme": "bootstrap-product-icons",
     "cSpell.userWords": [
         "dajngo",
         "Devman",
@@ -92,25 +108,4 @@
         "фронтенд",
         "фронтенда"
     ],
-    "redhat.telemetry.enabled": false,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.guides.bracketPairs": "active",
-    "vs-kubernetes": {
-        "disable-linters": [
-            "resource-limits"
-        ],
-        "vscode-kubernetes.helm-path.linux": "/home/max/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vscode-kubernetes.minikube-path.linux": "/home/max/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.guides.bracketPairsHorizontal": false,
-    // "editor.hover.enabled": false,
-    "cSpell.ignoreWords": [],
-    "editor.unicodeHighlight.nonBasicASCII": false,
-    "cSpell.enableFiletypes": [
-        "!asciidoc"
-    ],
-    "polacode.target": "snippet",
-    "yaml.validate": false,
-    "workbench.productIconTheme": "bootstrap-product-icons",
 }
