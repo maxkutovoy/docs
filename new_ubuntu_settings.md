@@ -272,3 +272,8 @@ kubectl rollout restart deployment wiki-deployment
 ```sh
 sudo apt install openssh-server
 ```
+
+## Добавить Pop_OS репозиторий
+```sh
+sudo apt-add-repository -y ppa:system76-dev/stable
+```
