@@ -142,6 +142,8 @@ sudo apt install python3.9
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 
 sudo apt-get install python3.9-dev python3.9-venv
+
+sudo apt install python3-pip
 ```
 
 
