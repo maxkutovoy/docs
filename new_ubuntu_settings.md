@@ -20,6 +20,9 @@ alias dcdv="docker-compose down -v"
 alias dcr="docker-compose run"
 alias k="kubectl"
 alias kr="kubectl run"
+alias wgrup="sudo systemctl start wg-quick@wg0.service"
+alias wgrdown="sudo systemctl stop wg-quick@wg0.service"
+alias wgrs="sudo systemctl status wg-quick@wg0.service"
 ```
 
 ## Установить Firefox
