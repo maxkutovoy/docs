@@ -1,13 +1,13 @@
-## Скачать Firefox:
-https://www.mozilla.org/en-US/firefox/new/
+sudo snap remove firefox
 
-## Распаковать.
-```
-cd Downloads/
+sudo add-apt-repository ppa:mozillateam/ppa
 
-sudo mv firefox /opt
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
 
-sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 
-sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications
-```
+sudo apt install firefox
