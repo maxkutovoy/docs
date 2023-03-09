@@ -291,13 +291,13 @@ sudo apt-add-repository -y ppa:system76-dev/stable
 ```
 
 ## Установка и настройка Wireguard
-'''sh
+```sh
 sudo apt install wireguard resolvconf iptables
-'''
+```
 
 Копировать wg_config_file в /etc/wireguard
-'''sh
+```sh
 sudo systemctl start wg-quick@wg_ru.service
 или
 sudo wg-quick up wg_ru
-'''
+```
