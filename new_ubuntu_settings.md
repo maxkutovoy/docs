@@ -3,10 +3,10 @@
 ## Aliases
 ```sh
 alias l="ls -la --group-directories-first"
-alias sai="sudo nala install"
-alias sar="sudo nala remove"
-alias sau="sudo nala update"
-alias sauu="sudo nala update && sudo nala upgrade"
+alias sai="sudo apt install"
+alias sar="sudo apt remove"
+alias sau="sudo apt update"
+alias sauu="sudo apt update && sudo apt upgrade"
 alias saa="sudo nala autoremove"
 alias pv="python -m venv venv"
 alias sv="source venv/bin/activate"
