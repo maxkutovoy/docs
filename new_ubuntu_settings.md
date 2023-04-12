@@ -301,3 +301,15 @@ sudo systemctl start wg-quick@wg_ru.service
 или
 sudo wg-quick up wg_ru
 ```
+
+## Изменить тему flatpak
+```sh
+sudo flatpak override --filesystem=$HOME/.themes
+
+sudo flatpak override --env=GTK_THEME=my-theme
+```
+
+для отмены
+```sh
+sudo flatpak override --reset
+```
