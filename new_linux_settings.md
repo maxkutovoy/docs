@@ -25,6 +25,29 @@ alias sdu="sudo dnf update"
 alias sda="sudo dnf autoremove"
 ```
 
+
+## Изменить размер иконок Babar
+
+```sh
+cd ~/.local/share/gnome-shell/extensions/babar*/schemas
+
+```
+В файле
+```sh
+org.gnome.shell.extensions.babar.gschema.xml
+```
+Установить icon-size
+```sh
+	<key name="icon-size" type="i">
+			<default>25</default>
+		</key>
+```
+После этого перекомпилировать схемы
+```sh
+glib-compile-schemas .
+```
+
+
 ## Установить apt-fast
 
 ```sh
