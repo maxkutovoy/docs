@@ -1,28 +1,28 @@
 # Настройка ubuntu
 
-## Aliases
+## Univrsal Aliases
 ```sh
+alias m="sudo micro"
+alias f="fastfetch"
+alias textscale="gsettings set org.gnome.desktop.interface text-scaling-factor"
 alias l="ls -la --group-directories-first"
+```
+
+## Ubuntu Aliases
+```sh
 alias sai="sudo apt install"
 alias sar="sudo apt remove"
 alias sau="sudo apt update"
 alias sauu="sudo apt update && sudo apt upgrade"
 alias saa="sudo apt autoremove"
-alias pv="python -m venv venv"
-alias sv="source venv/bin/activate"
-alias rs="python manage.py runserver"
-alias mm="python manage.py makemigrations"
-alias mg="python manage.py migrate"
-alias d="docker"
-alias dc="docker-compose"
-alias dcub="docker-compose up --build"
-alias dcdv="docker-compose down -v"
-alias dcr="docker-compose run"
-alias k="kubectl"
-alias kr="kubectl run"
-alias wgrup="sudo systemctl start wg-quick@wg0.service"
-alias wgrdown="sudo systemctl stop wg-quick@wg0.service"
-alias wgrs="sudo systemctl status wg-quick@wg0.service"
+```
+
+## Fedora Aliases
+```sh
+alias sdi="sudo dnf install"
+alias sdr="sudo dnf remove"
+alias sdu="sudo dnf update"
+alias sda="sudo dnf autoremove"
 ```
 
 ## Установить Firefox
@@ -136,11 +136,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 - Добавить в плагины (в ~/.zshrc)
 
 ```sh
-plugins=(
-    # other plugins...
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
 
@@ -149,21 +145,6 @@ plugins=(
 sudo add-apt-repository ppa:oguzhaninan/stacer
 
 sudo apt install stacer
-```
-
-## Установить Python 3.9.*
-
-```sh
-sudo apt install software-properties-common #Потребовалось в linux Mint
-sudo add-apt-repository ppa:deadsnakes/ppa
-
-sudo apt install python3.9
-
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
-
-sudo apt-get install python3.9-dev python3.9-venv
-
-sudo apt install python3-pip
 ```
 
 
