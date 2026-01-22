@@ -29,8 +29,8 @@ alias sda="sudo dnf autoremove"
 ```sh
 alias spi="sudo pacman -S"
 alias spr="sudo pacman -Rsu remove"
-alias sdu="sudo pacman -Syu"
-alias sda="sudo pacman -Rns $(pacman -Qdtq)"
+alias spu="sudo pacman -Syu"
+alias spa="sudo pacman -Rns $(pacman -Qdtq)"
 ```
 
 
