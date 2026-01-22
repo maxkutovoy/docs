@@ -25,6 +25,14 @@ alias sdu="sudo dnf update"
 alias sda="sudo dnf autoremove"
 ```
 
+## Arch Aliases
+```sh
+alias spi="sudo pacman -S"
+alias spr="sudo pacman -Rsu remove"
+alias sdu="sudo pacman -Syu"
+alias sda="sudo pacman -Rns $(pacman -Qdtq)"
+```
+
 
 ## Изменить размер иконок Babar
 
