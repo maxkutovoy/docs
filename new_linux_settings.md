@@ -5,6 +5,7 @@
 alias m="sudo micro"
 alias f="fastfetch"
 alias textscale="gsettings set org.gnome.desktop.interface text-scaling-factor"
+alias cusorsize="gsettings set org.gnome.desktop.interface cursor-size"
 alias l="ls -la --group-directories-first"
 ```
 
